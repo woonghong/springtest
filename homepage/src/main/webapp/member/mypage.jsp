@@ -33,8 +33,9 @@
 			if(!confirm("탈퇴하겠습니까?")){
 				return false;
 			}
-		}))
-	})
+		})
+		);
+	});
 </script>
 <title>마이페이지</title>
 </head>

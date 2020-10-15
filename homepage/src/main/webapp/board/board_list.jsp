@@ -42,7 +42,7 @@
 				<tr>
 				<td>${row.bod_no}</td>
 				<td>${row.id}</td>
-				<td>${row.subject}</td>
+				<td><a href="./board_detail.do?bod_no=${row.bod_no}">${row.subject}</a></td>
 				<td>${row.content}</td>
 				<td>${row.write_date}</td>
 				</tr>

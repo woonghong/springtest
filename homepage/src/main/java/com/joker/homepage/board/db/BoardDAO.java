@@ -24,4 +24,9 @@ public class BoardDAO {
 		return sqlsession.selectList("board.board_list");
 	}
 	
+	// 게시물 자세히 보기
+			public BoardDTO board_detail(int bod_no) throws Exception{
+				return sqlsession.selectOne("board.board_detail", bod_no);
+			}
+	
 }

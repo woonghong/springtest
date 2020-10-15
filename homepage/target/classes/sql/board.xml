@@ -13,5 +13,10 @@
 	<select id="board_list" parameterType="board" resultType="board">
 		select BOD_NO, ID,SUBJECT, CONTENT, WRITE_DATE from board
 	</select>
+	
+	<!-- 게시글 보기 -->
+	<select id="board_detail" resultType="board">
+		select * from board where BOD_NO = #{bod_no}
+	</select>
 
 </mapper>

@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.joker.homepage.board.db.BoardDAO;
 import com.joker.homepage.board.db.BoardDTO;
+import com.joker.homepage.member.db.MemberDTO;
 
 @Service
 public class BoardServiceImpl implements BoardService {
@@ -23,4 +24,11 @@ public class BoardServiceImpl implements BoardService {
 	public List<BoardDTO> board_list() throws Exception{
 			return manager.board_list();
 		}
+		
+		// 게시판 글 수정
+		@Override
+		public BoardDTO board_detail(int bod_no) throws Exception {
+			return manager.board_detail(bod_no);
+		}
+		
 }
